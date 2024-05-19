@@ -4,6 +4,7 @@ import org.gradle.api.tasks.testing.logging.TestLogEvent
 plugins {
     id("io.papermc.paperweight.patcher") version "1.7.1"
 
+    `maven-publish`
     `java-library`
 }
 
@@ -79,6 +80,7 @@ tasks.register("printKelpVersion") {
 }
 
 allprojects {
+    apply(plugin = "maven-publish")
     apply(plugin = "java-library")
 
     java {

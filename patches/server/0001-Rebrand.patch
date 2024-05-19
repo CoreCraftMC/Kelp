@@ -106,7 +106,7 @@ index 3cb56595822799926a8141e60a42f5d1edfc6de5..4a82269a24baf65c62550166201a48dd
      protected LineReader buildReader(LineReaderBuilder builder) {
          builder
 -                .appName("Purpur") // Purpur
-+                .appName("Tentacles") // Purpur // Tentacles
++                .appName("Kelp") // Purpur // Kelp
                  .variable(LineReader.HISTORY_FILE, java.nio.file.Paths.get(".console_history"))
                  .completer(new ConsoleCommandCompleter(this.server))
                  .option(LineReader.Option.COMPLETE_IN_WORD, true);
@@ -118,7 +118,7 @@ index a6e5950b5875cafd734300cdfbf58f5d3736f3c8..29b8f525dc6ef0fb93e830312ed3fea8
  
      private static final String BRAND_PAPER_NAME = "Paper";
      private static final String BRAND_PURPUR_NAME = "Purpur"; // Purpur
-+    private static final String BRAND_TENTACLES_NAME = "Kelp"; // Kelp
++    private static final String BRAND_KELP_NAME = "Kelp"; // Kelp
  
      private static final String BUILD_DEV = "DEV";
  
@@ -222,7 +222,7 @@ index a353eb9f45af7b7f9bfd92a4a89403335b841840..ccfd1cd4dc9dd62a65f7d791e7893856
                  } else
                  {
 -                    log.log(Level.SEVERE, "--- DO NOT REPORT THIS TO PURPUR - THIS IS NOT A BUG OR A CRASH  - " + Bukkit.getServer().getVersion() + " ---"); // Purpur
-+                    log.log(Level.SEVERE, "--- DO NOT REPORT THIS TO TENTACLES - THIS IS NOT A BUG OR A CRASH  - " + Bukkit.getServer().getVersion() + " ---"); // Purpur // Kelp
++                    log.log(Level.SEVERE, "--- DO NOT REPORT THIS TO KELP - THIS IS NOT A BUG OR A CRASH  - " + Bukkit.getServer().getVersion() + " ---"); // Purpur // Kelp
                      log.log(Level.SEVERE, "The server has not responded for " + (currentTime - lastTick) / 1000 + " seconds! Creating thread dump");
                  }
                  // Paper end - Different message for short timeout
@@ -231,7 +231,7 @@ index a353eb9f45af7b7f9bfd92a4a89403335b841840..ccfd1cd4dc9dd62a65f7d791e7893856
                  }
                  } else {
 -                    log.log(Level.SEVERE, "--- DO NOT REPORT THIS TO PURPUR - THIS IS NOT A BUG OR A CRASH ---"); // Purpur
-+                    log.log(Level.SEVERE, "--- DO NOT REPORT THIS TO TENTACLES - THIS IS NOT A BUG OR A CRASH ---"); // Purpur // Kelp
++                    log.log(Level.SEVERE, "--- DO NOT REPORT THIS TO KELP - THIS IS NOT A BUG OR A CRASH ---"); // Purpur // Kelp
                  }
  
                  log.log( Level.SEVERE, "------------------------------" );

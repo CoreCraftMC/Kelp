@@ -14,9 +14,9 @@ index 7107eabf02d9d9b69d97c978ba421ad52031ec3f..376da865092e49fc3f742883c912f80e
  
 +    // Kelp start
 +    /**
-+     * The brand id for Tentacles.
++     * The brand id for Kelp.
 +     */
-+    Key BRAND_TENTACLES_ID = Key.key("corecraftmc", "kelp");
++    Key BRAND_KELP_ID = Key.key("corecraftmc", "kelp");
 +    // Kelp end
 +
      /**

@@ -32,7 +32,7 @@ index d23ecfabf6bf1e355fb2efe5abd80236259ce3c4..180c329b060d2ac95c7eac7d08253bb0
 -            "Brand-Id" to "purpurmc:purpur", // Purpur
 -            "Brand-Name" to "Purpur", // Purpur
 +            "Specification-Vendor" to "Kelp Team", // Purpur // Kelp
-+            "Brand-Id" to "corecraftmc:Kelp", // Purpur //Kelp
++            "Brand-Id" to "corecraftmc:kelp", // Purpur //Kelp
 +            "Brand-Name" to "Kelp", // Purpur // Kelp
              "Build-Number" to (build ?: ""),
              "Build-Time" to Instant.now().toString(),

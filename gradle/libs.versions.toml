@@ -1,0 +1,20 @@
+[versions]
+# Core
+annotations = "24.1.0"
+gson = "2.10.1"
+vital = "1.5.1"
+
+paperweight = "1.7.1"
+shadow = "8.1.7"
+
+[plugins]
+paperweight = { id = "io.papermc.paperweight.userdev", version.ref = "paperweight" }
+shadow = { id = "io.github.goooler.shadow", version.ref = "shadow" }
+
+[libraries]
+annotations = { module = "org.jetbrains:annotations", version.ref = "annotations" }
+
+vital-paper = { module = "com.ryderbelserion.vital:paper", version.ref = "vital" }
+vital-core = { module = "com.ryderbelserion.vital:core", version.ref = "vital" }
+
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }

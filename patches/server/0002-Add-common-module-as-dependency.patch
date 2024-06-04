@@ -1,0 +1,26 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Ryder Belserion <no-reply@ryderbelserion.com>
+Date: Tue, 4 Jun 2024 00:52:28 -0400
+Subject: [PATCH] Add common module as dependency
+
+
+diff --git a/build.gradle.kts b/build.gradle.kts
+index 3fb41844a21024aafb5eed1d75d387182392f093..a6040ea462aee09d060fde6a1858ae5c273f29b0 100644
+--- a/build.gradle.kts
++++ b/build.gradle.kts
+@@ -13,7 +13,14 @@ configurations.named(log4jPlugins.compileClasspathConfigurationName) {
+ val alsoShade: Configuration by configurations.creating
+ 
+ dependencies {
+-    implementation(project(":kelp-api")) // Purpur // Kelp
++    // Kelp start
++    implementation(project(":kelp-api"))
++
++    api(project(":kelp-common")) {
++        exclude("org.snakeyaml")
++    }
++    // Kelp end
++
+     // Paper start
+     implementation("org.jline:jline-terminal-jansi:3.21.0")
+     implementation("net.minecrell:terminalconsoleappender:1.3.0")

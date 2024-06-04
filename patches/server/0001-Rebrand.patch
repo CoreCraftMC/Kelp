@@ -5,7 +5,7 @@ Subject: [PATCH] Rebrand
 
 
 diff --git a/build.gradle.kts b/build.gradle.kts
-index d23ecfabf6bf1e355fb2efe5abd80236259ce3c4..180c329b060d2ac95c7eac7d08253bb04303bb7c 100644
+index d23ecfabf6bf1e355fb2efe5abd80236259ce3c4..3fb41844a21024aafb5eed1d75d387182392f093 100644
 --- a/build.gradle.kts
 +++ b/build.gradle.kts
 @@ -13,7 +13,7 @@ configurations.named(log4jPlugins.compileClasspathConfigurationName) {
@@ -38,7 +38,7 @@ index d23ecfabf6bf1e355fb2efe5abd80236259ce3c4..180c329b060d2ac95c7eac7d08253bb0
              "Build-Time" to Instant.now().toString(),
              "Git-Branch" to gitBranch, // Paper
 diff --git a/src/main/java/com/destroystokyo/paper/PaperVersionFetcher.java b/src/main/java/com/destroystokyo/paper/PaperVersionFetcher.java
-index 6d36fc6d8e22d9b68dea3830f6ecc8763184c343..c1334dbd5e027c41a4502c14491d34e58b54a8f1 100644
+index 6d36fc6d8e22d9b68dea3830f6ecc8763184c343..b223697c73fc6d405ce56d6bf08d2d9501327525 100644
 --- a/src/main/java/com/destroystokyo/paper/PaperVersionFetcher.java
 +++ b/src/main/java/com/destroystokyo/paper/PaperVersionFetcher.java
 @@ -36,7 +36,7 @@ public class PaperVersionFetcher implements VersionFetcher {
@@ -98,7 +98,7 @@ index 6d36fc6d8e22d9b68dea3830f6ecc8763184c343..c1334dbd5e027c41a4502c14491d34e5
              }
          } catch (final IOException e) {
 diff --git a/src/main/java/com/destroystokyo/paper/console/PaperConsole.java b/src/main/java/com/destroystokyo/paper/console/PaperConsole.java
-index 3cb56595822799926a8141e60a42f5d1edfc6de5..4a82269a24baf65c62550166201a48ddbe33f9ae 100644
+index 3cb56595822799926a8141e60a42f5d1edfc6de5..cb0df2c345ffbd81faecdee2d6f84c35367c4a7c 100644
 --- a/src/main/java/com/destroystokyo/paper/console/PaperConsole.java
 +++ b/src/main/java/com/destroystokyo/paper/console/PaperConsole.java
 @@ -17,7 +17,7 @@ public final class PaperConsole extends SimpleTerminalConsole {
@@ -111,7 +111,7 @@ index 3cb56595822799926a8141e60a42f5d1edfc6de5..4a82269a24baf65c62550166201a48dd
                  .completer(new ConsoleCommandCompleter(this.server))
                  .option(LineReader.Option.COMPLETE_IN_WORD, true);
 diff --git a/src/main/java/io/papermc/paper/ServerBuildInfoImpl.java b/src/main/java/io/papermc/paper/ServerBuildInfoImpl.java
-index a6e5950b5875cafd734300cdfbf58f5d3736f3c8..29b8f525dc6ef0fb93e830312ed3fea8c30222bc 100644
+index a6e5950b5875cafd734300cdfbf58f5d3736f3c8..70d72a8aa3eac3916602fa0185f24e97c44e016b 100644
 --- a/src/main/java/io/papermc/paper/ServerBuildInfoImpl.java
 +++ b/src/main/java/io/papermc/paper/ServerBuildInfoImpl.java
 @@ -32,6 +32,7 @@ public record ServerBuildInfoImpl(
@@ -144,7 +144,7 @@ index a6e5950b5875cafd734300cdfbf58f5d3736f3c8..29b8f525dc6ef0fb93e830312ed3fea8
  
      @Override
 diff --git a/src/main/java/net/minecraft/CrashReport.java b/src/main/java/net/minecraft/CrashReport.java
-index c366d84518979e842a6f10f969a5951539ecac93..f6345e0609f436cfae606c0114e706024bac19e9 100644
+index c366d84518979e842a6f10f969a5951539ecac93..dfb970622619e182f8a741623e0967b75163affc 100644
 --- a/src/main/java/net/minecraft/CrashReport.java
 +++ b/src/main/java/net/minecraft/CrashReport.java
 @@ -127,7 +127,7 @@ public class CrashReport {
@@ -157,10 +157,10 @@ index c366d84518979e842a6f10f969a5951539ecac93..f6345e0609f436cfae606c0114e70602
          stringbuilder.append("// ");
          stringbuilder.append(CrashReport.getErrorComment());
 diff --git a/src/main/java/net/minecraft/server/MinecraftServer.java b/src/main/java/net/minecraft/server/MinecraftServer.java
-index 71705ccbc0cce88382b1fb536271773a332ad3a2..bf8181eb2868bafca7383516ab6e02158101a765 100644
+index 330bae815c0a332e3dc9fa7b224c9f92098199b9..deaf5522304ac26973a72f1f8f6aef2df6f0b3f6 100644
 --- a/src/main/java/net/minecraft/server/MinecraftServer.java
 +++ b/src/main/java/net/minecraft/server/MinecraftServer.java
-@@ -962,7 +962,7 @@ public abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTa
+@@ -959,7 +959,7 @@ public abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTa
          shutdownThread = Thread.currentThread();
          org.spigotmc.WatchdogThread.doStop(); // Paper
          if (!isSameThread()) {
@@ -170,7 +170,7 @@ index 71705ccbc0cce88382b1fb536271773a332ad3a2..bf8181eb2868bafca7383516ab6e0215
                  this.getRunningThread().stop();
                  try {
 diff --git a/src/main/java/org/bukkit/craftbukkit/scheduler/CraftScheduler.java b/src/main/java/org/bukkit/craftbukkit/scheduler/CraftScheduler.java
-index ca8ae8e1c51b937dac916e0b0dc94b5e2e61efeb..632108edb4c76e141403da04381662574d5c1d89 100644
+index ca8ae8e1c51b937dac916e0b0dc94b5e2e61efeb..e03bd80a9b3aabbe439d77eaafb9d3c5184253f3 100644
 --- a/src/main/java/org/bukkit/craftbukkit/scheduler/CraftScheduler.java
 +++ b/src/main/java/org/bukkit/craftbukkit/scheduler/CraftScheduler.java
 @@ -503,7 +503,7 @@ public class CraftScheduler implements BukkitScheduler {
@@ -183,7 +183,7 @@ index ca8ae8e1c51b937dac916e0b0dc94b5e2e61efeb..632108edb4c76e141403da0438166257
                  // (async tasks must live with race-conditions if they attempt to cancel between these few lines of code)
              }
 diff --git a/src/main/java/org/bukkit/craftbukkit/util/Versioning.java b/src/main/java/org/bukkit/craftbukkit/util/Versioning.java
-index 99597258e8e88cd9e2c901c4ac3ff7faeeabee2b..5e8569c0661d6cb38e8dafe47b812c7ba834dc0e 100644
+index 99597258e8e88cd9e2c901c4ac3ff7faeeabee2b..4c90d9268c5bb21ac85b79d9070026debd3a5c50 100644
 --- a/src/main/java/org/bukkit/craftbukkit/util/Versioning.java
 +++ b/src/main/java/org/bukkit/craftbukkit/util/Versioning.java
 @@ -11,7 +11,7 @@ public final class Versioning {
@@ -196,7 +196,7 @@ index 99597258e8e88cd9e2c901c4ac3ff7faeeabee2b..5e8569c0661d6cb38e8dafe47b812c7b
  
          if (stream != null) {
 diff --git a/src/main/java/org/spigotmc/WatchdogThread.java b/src/main/java/org/spigotmc/WatchdogThread.java
-index a353eb9f45af7b7f9bfd92a4a89403335b841840..ccfd1cd4dc9dd62a65f7d791e78938564d8ea642 100644
+index a353eb9f45af7b7f9bfd92a4a89403335b841840..700b5ca029a79fd3be40c81f469d50fb8e11085d 100644
 --- a/src/main/java/org/spigotmc/WatchdogThread.java
 +++ b/src/main/java/org/spigotmc/WatchdogThread.java
 @@ -155,14 +155,14 @@ public final class WatchdogThread extends io.papermc.paper.util.TickThread // Pa

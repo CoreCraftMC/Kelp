@@ -9,14 +9,11 @@ public class KelpConfig implements SettingsHolder {
     @Override
     public void registerComments(@NotNull CommentsConfiguration conf) {
         String[] header = {
-                "Github: https://github.com/CoreCraftMC/Kelp"
+          "Github: https://github.com/CoreCraftMC/Kelp"
         };
 
         String[] deprecation = {
-                "",
-                "Warning: This section is subject to change so it is considered deprecated.",
-                "This is your warning before the change happens.",
-                ""
+          "This section is deprecated and is marked for removal."
         };
     }
 }

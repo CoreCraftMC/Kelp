@@ -9,5 +9,5 @@ feather {
 }
 
 dependencies {
-    implementation(libs.vital.core)
+    api(libs.vital.core)
 }

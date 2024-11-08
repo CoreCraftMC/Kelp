@@ -1,20 +1,25 @@
-[versions]
-# Core
-annotations = "24.1.0"
-gson = "2.10.1"
-vital = "1.5.1"
-
-paperweight = "1.7.1"
-shadow = "8.1.7"
-
 [plugins]
-paperweight = { id = "io.papermc.paperweight.userdev", version.ref = "paperweight" }
-shadow = { id = "io.github.goooler.shadow", version.ref = "shadow" }
+paperweight-patcher = { id = "io.papermc.paperweight.patcher", version.ref = "paperweight" }
+shadow = { id = "com.gradleup.shadow", version.ref = "shadow" }
+
+[versions]
+# Gradle Plugins
+paperweight = "1.7.4"
+shadow = "8.3.0"
+
+# Common API
+jetbrains = "24.1.0"
+gson = "2.10.1"
+
+# Vital API
+vital-paper = "2.2.4"
+vital-api = "0.0.5"
 
 [libraries]
-annotations = { module = "org.jetbrains:annotations", version.ref = "annotations" }
+# Vital API
+vital-paper = { module = "com.ryderbelserion.vital:paper", version.ref = "vital-paper" }
+vital-api = { module = "com.ryderbelserion.vital:api", version.ref = "vital-api" }
 
-vital-paper = { module = "com.ryderbelserion.vital:paper", version.ref = "vital" }
-vital-core = { module = "com.ryderbelserion.vital:core", version.ref = "vital" }
-
+# Common API
+jetbrains = { module = "org.jetbrains:annotations", version.ref = "jetbrains" }
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
